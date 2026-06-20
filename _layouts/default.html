@@ -21,7 +21,7 @@
 </head>
 <body>
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="{{ '/' | relative_url }}">
@@ -44,10 +44,12 @@
   </nav>
 
   {% if site.under_construction %}
-  <div class="notification is-warning has-text-centered" style="border-radius: 0; margin-bottom: 0;">
+  <div role="status" class="notification is-warning has-text-centered" style="border-radius: 0; margin-bottom: 0;">
     This site is still under construction — some pages, links, and content are incomplete.
   </div>
   {% endif %}
+
+  <main id="main-content">
 
   {% if page.is_home %}
   <section class="hero is-site">
@@ -71,6 +73,8 @@
       </div>
     </div>
   </section>
+  
+  </main>
 
   <footer class="footer p-2">
     <div class="container">

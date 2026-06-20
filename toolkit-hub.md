@@ -10,12 +10,12 @@ Welcome to the Accessibility Toolkit.
 <!-- NO EDITING OF THIS PAGE IS REQUIRED TO CHANGE ITEMS IN THE LISTS. -->
 
 {% for category in site.data.toolkit %}
-### {{ category.category }}
+## {{ category.category }}
 
 <div class="columns is-multiline">
 {% for item in category.items %}
   <div class="column is-half">
-    <a class="box link-card" href="{{ item.url }}" target="_blank" rel="noopener">
+    <a class="box link-card" href="{{ item.url }}">
       <p class="title is-5">{{ item.title }}</p>
       <p class="subtitle is-6 mb-0">{{ item.description }}</p>
     </a>
