@@ -2,7 +2,7 @@ title: "SMSN Toolkit for Accessible Maths"
 footer_attrib: "Scottish Maths Support Network"
 short_title: "SMSN Accessibility Toolkit"
 description: "The Scottish Maths Support Network's Accessible Mathematics Toolkit."
-url: "https://smsn-toolkit.github.io/demo/"
+url: "https://smsn-toolkit.github.io"
 baseurl: ""
 
 # The navigation bar reads this list directly. Add, remove, or reorder
