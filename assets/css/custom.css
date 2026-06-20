@@ -7,16 +7,16 @@
    =================================================================== */
    
 :root {
-  --accent: #1f6f5c;       /* primary accent — links, buttons, hero */
-  --accent-dark: #14463a;  /* darker accent — hero gradient, hover */
-  --accent-light: #d2e2de;
-  --ink: #21261f;          /* main text color */
+  --accent: #1f6f5c;       /* primary accent */
+  --accent-dark: #14463a;  /* darker accent */
+  --accent-light: #d2e2de; /* lighter accent */
+  --ink: #21261f;          /* main text colour */
   --muted: #5d6b66;        /* secondary text, subtitles */
   --paper: #fdfdfd;        /* page background */
   --hairline: #e7e5df;     /* thin borders, dividers */
   
-  --hero-1: #0f2f28;
-  --hero-2: #14463a;
+  --hero-1: #0f2f28; /* Splash banner colours
+  --hero-2: #14463a; /* Splash banner colours
   
    /* navbar */
   --nav-bg: var(--accent);
@@ -46,13 +46,13 @@
     --paper: #121614;
     --hairline: #2a2f2c;
     
-    /* navbar in dark mode (optional tweak) */
+    /* navbar in dark mode  */
     --nav-bg: var(--accent-dark);
     --nav-text: #0f1412;
     --nav-hover-bg: rgba(0, 0, 0, 0.15);
     --nav-active: #0f1412;
     
-    /* footer */
+    /* footer in dark mode */
     --footer-text: var(--ink); 
     --footer-bg: var(--hero-2);
     --footer-link: var(--accent);
@@ -110,6 +110,7 @@ h1, h2, h3, h4, h5, h6,
   background-color: var(--nav-text);
 }
 
+/* Link styling */
 a {
   color: var(--accent-dark);
 }
@@ -147,7 +148,7 @@ a:hover {
 }
 .link-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10);
 }
 .link-card .title {
   color: var(--ink);

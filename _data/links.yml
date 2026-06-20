@@ -7,15 +7,19 @@
 
 - category: Getting Started
   items:
-    - title: Jekyll Documentation
-      url: https://jekyllrb.com/docs/
-      description: Official docs for the static site generator powering this site.
-    - title: Bulma Documentation
-      url: https://bulma.io/documentation/
-      description: Reference for every CSS class used in the design.
+    - title: First Title
+      url: https://
+      description: Description of link 1.
+    - title: Second Title
+      url: https://
+      description: Description for Link 2.
 
-- category: Inspiration
+- category: Accessible Maths Sites
   items:
-    - title: Replace this entry
-      url: https://example.com
-      description: Delete this placeholder once you have a real link to add.
+    - title: JISC Accessible Maths Working Group
+      url: https://sites.google.com/view/accessible-maths/home
+      description: Homepage of the JISC A11y-Maths group, made up of community members from UK higher education institutions, and passionate businesses that share our drive to make maths more accessible for all. 
+  items:
+    - title: Make Things Accessible Website
+      url: https://www.makethingsaccessible.com/
+      description: A project that began as a collaboration of [a number of London Universities](https://www.makethingsaccessible.com/about).
