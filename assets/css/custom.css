@@ -15,8 +15,8 @@
   --paper: #fdfdfd;        /* page background */
   --hairline: #e7e5df;     /* thin borders, dividers */
   
-  --hero-1: #0f2f28; /* Splash banner colours
-  --hero-2: #14463a; /* Splash banner colours
+  --hero-1: #0f2f28; /* Splash banner colours */
+  --hero-2: #14463a; /* Splash banner colours */
   
    /* navbar */
   --nav-bg: var(--accent);
@@ -28,6 +28,9 @@
   --footer-text: var(--ink); 
   --footer-bg: var(--accent-light);
   --footer-link: var(--accent-dark);
+  
+  /* card */
+  --card-hover-shadow: rgba(0,0,0,0.15)
   
 }
  
@@ -56,6 +59,10 @@
     --footer-text: var(--ink); 
     --footer-bg: var(--hero-2);
     --footer-link: var(--accent);
+    
+    /* card */
+	--card-hover-shadow: rgba(255,255,255,0.15)
+  
   }
 }
 
@@ -93,9 +100,13 @@ h1, h2, h3, h4, h5, h6,
 
 /* Hover state */
 .navbar .navbar-item:hover,
-.navbar .navbar-link:hover {
+.navbar .navbar-item:focus-visible,
+.navbar .navbar-link:hover,
+.navbar .navbar-link:focus-visible {
   background: var(--nav-hover-bg);
   color: var(--nav-text);
+  outline: 2px solid var(--nav-text);
+  outline-offset: -2px;
 }
 
 /* Active state */
@@ -108,6 +119,18 @@ h1, h2, h3, h4, h5, h6,
 /* Burger icon */
 .navbar .navbar-burger span {
   background-color: var(--nav-text);
+}
+
+.navbar .navbar-burger {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navbar .navbar-burger:focus-visible {
+  outline: 2px solid var(--nav-text);
+  outline-offset: -2px;
 }
 
 /* Link styling */
@@ -136,10 +159,22 @@ a:hover {
   font-weight: 600;
   padding: 0.75em 1.75em;
 }
-.hero.is-site .button.is-cta:hover {
+.hero.is-site .button.is-cta:hover,
+.hero.is-site .button.is-cta:focus-visible
+ {
   background: var(--accent-light);
   color: var(--hero-2);
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
 }
+
+.wrap-button {
+    white-space: normal;
+    height: auto;
+    line-height: 1.4;
+    text-align: center;
+}
+
 
 /* Cards used on the curated-links pages (links.md, resources.md) */
 .link-card {
@@ -148,7 +183,7 @@ a:hover {
 }
 .link-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 10px 24px var(--card-hover-shadow) !important;
 }
 .link-card .title {
   color: var(--ink);

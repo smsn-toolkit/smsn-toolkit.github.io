@@ -6,6 +6,8 @@
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
 
+  {% if site.under_construction %}<meta name="robots" content="noindex, nofollow">{% endif %}
+
   <!-- Bulma — pure CSS, no JS, so editors never need to touch this -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 
@@ -25,11 +27,11 @@
         <a class="navbar-item" href="{{ '/' | relative_url }}">
           <strong>{{ site.short_title | default: site.title }}</strong>
         </a>
-        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" id="navBurger">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+        <button type="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" id="navBurger">
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		</button>
       </div>
       <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
@@ -41,6 +43,12 @@
     </div>
   </nav>
 
+  {% if site.under_construction %}
+  <div class="notification is-warning has-text-centered" style="border-radius: 0; margin-bottom: 0;">
+    This site is still under construction — some pages, links, and content are incomplete.
+  </div>
+  {% endif %}
+
   {% if page.is_home %}
   <section class="hero is-site">
     <div class="hero-body">
@@ -48,7 +56,7 @@
         <h1 class="title">{{ site.title }}</h1>
         {% if site.description %}<p class="subtitle">{{ site.description }}</p>{% endif %}
         {% if page.cta_text %}
-        <a class="button is-cta is-medium mt-4" href="{{ page.cta_url | relative_url }}">{{ page.cta_text }}</a>
+        <a class="button is-cta is-medium mt-4 wrap-button" href="{{ page.cta_url | relative_url }}">{{ page.cta_text }}</a>
         {% endif %}
       </div>
     </div>
@@ -66,7 +74,7 @@
 
   <footer class="footer p-2">
     <div class="container">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.footer_attrib }}. Built with <a src="">Jekyll</a> and Bulma.</p>
+		<p>&copy; {{ site.time | date: '%Y' }} Created by David Hodge using <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://bulma.io">Bulma</a>.</p>
     </div>
   </footer>
 
@@ -76,10 +84,12 @@
       const burger = document.getElementById('navBurger');
       const menu = document.getElementById('navMenu');
       burger.addEventListener('click', () => {
-        burger.classList.toggle('is-active');
-        menu.classList.toggle('is-active');
+		const isOpen = burger.classList.toggle('is-active');
+		menu.classList.toggle('is-active');
+		burger.setAttribute('aria-expanded', isOpen);
       });
     });
+    
   </script>
 </body>
 </html>
