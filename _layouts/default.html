@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- Bulma — pure CSS, no JS, so editors never need to touch this -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- Site-specific tweaks live here, separate from Bulma itself -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="{{ '/' | relative_url }}">
+          <strong>{{ site.short_title | default: site.title }}</strong>
+        </a>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" id="navBurger">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          {% for item in site.nav_pages %}
+            <a class="navbar-item {% if page.url == item.url %}is-active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  {% if page.is_home %}
+  <section class="hero is-site">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">{{ site.title }}</h1>
+        {% if site.description %}<p class="subtitle">{{ site.description }}</p>{% endif %}
+        {% if page.cta_text %}
+        <a class="button is-cta is-medium mt-4" href="{{ page.cta_url | relative_url }}">{{ page.cta_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="section">
+    <div class="container">
+      {% unless page.is_home %}<h1 class="title">{{ page.title }}</h1>{% endunless %}
+      <div class="content">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer p-2">
+    <div class="container">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.footer_attrib }}. Built with <a src="">Jekyll</a> and Bulma.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Burger menu JS
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.getElementById('navBurger');
+      const menu = document.getElementById('navMenu');
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
+</body>
+</html>

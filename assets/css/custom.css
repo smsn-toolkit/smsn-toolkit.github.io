@@ -1,0 +1,164 @@
+/* ===================================================================
+   Site styling — everything below is layered on top of Bulma's
+   defaults. Bulma itself is loaded from a CDN in _layouts/default.html
+   and never needs to be edited.
+
+   To change the site's colors, edit the variables below.
+   =================================================================== */
+   
+:root {
+  --accent: #1f6f5c;       /* primary accent — links, buttons, hero */
+  --accent-dark: #14463a;  /* darker accent — hero gradient, hover */
+  --accent-light: #d2e2de;
+  --ink: #21261f;          /* main text color */
+  --muted: #5d6b66;        /* secondary text, subtitles */
+  --paper: #fdfdfd;        /* page background */
+  --hairline: #e7e5df;     /* thin borders, dividers */
+  
+  --hero-1: #0f2f28;
+  --hero-2: #14463a;
+  
+   /* navbar */
+  --nav-bg: var(--accent);
+  --nav-text: #ffffff;
+  --nav-hover-bg: rgba(255, 255, 255, 0.12);
+  --nav-active: #ffffff;
+  
+  /* footer */
+  --footer-text: var(--ink); 
+  --footer-bg: var(--accent-light);
+  --footer-link: var(--accent-dark);
+  
+}
+ 
+.container {
+  max-width: min(80%, 1200px) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #3dd6a6;
+    --accent-dark: #2aa889;
+    --accent-light: #d8f6ed;
+    --ink: #e7e7e7;
+    --muted: #a7b0aa;
+
+    --paper: #121614;
+    --hairline: #2a2f2c;
+    
+    /* navbar in dark mode (optional tweak) */
+    --nav-bg: var(--accent-dark);
+    --nav-text: #0f1412;
+    --nav-hover-bg: rgba(0, 0, 0, 0.15);
+    --nav-active: #0f1412;
+    
+    /* footer */
+    --footer-text: var(--ink); 
+    --footer-bg: var(--hero-2);
+    --footer-link: var(--accent);
+  }
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-item strong,
+.title {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+/* ================================
+   Navbar background, text, states & burger
+   ================================ */
+
+.navbar {
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.navbar-menu {
+  background: var(--nav-bg);
+}
+
+.navbar .navbar-item,
+.navbar .navbar-link,
+.navbar .navbar-brand .navbar-item {
+  color: var(--nav-text);
+}
+
+/* Hover state */
+.navbar .navbar-item:hover,
+.navbar .navbar-link:hover {
+  background: var(--nav-hover-bg);
+  color: var(--nav-text);
+}
+
+/* Active state */
+.navbar-item.is-active {
+  background: var(--nav-hover-bg);
+  color: var(--nav-active);
+  font-weight: 600;
+}
+
+/* Burger icon */
+.navbar .navbar-burger span {
+  background-color: var(--nav-text);
+}
+
+a {
+  color: var(--accent-dark);
+}
+a:hover {
+  color: var(--accent);
+}
+
+/* The homepage banner. Only rendered when a page sets `is_home: true`
+   in its front matter — see index.md. */
+.hero.is-site {
+  background: linear-gradient(135deg, var(--hero-1), var(--hero-2));
+}
+
+.hero.is-site .title,
+.hero.is-site .subtitle {
+  color: #ffffff;
+}
+
+.hero.is-site .button.is-cta {
+  background: #ffffff;
+  color: var(--hero-2);
+  border: none;
+  font-weight: 600;
+  padding: 0.75em 1.75em;
+}
+.hero.is-site .button.is-cta:hover {
+  background: var(--accent-light);
+  color: var(--hero-2);
+}
+
+/* Cards used on the curated-links pages (links.md, resources.md) */
+.link-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border: 1px solid var(--hairline);
+}
+.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+.link-card .title {
+  color: var(--ink);
+}
+
+footer.footer {
+  margin-top: 1rem; 
+  color: var(--footer-text);
+  background: var(--footer-bg);
+}
+
+footer.footer a {
+  color: var(--footer-link);
+}

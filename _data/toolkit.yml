@@ -1,0 +1,13 @@
+# Same structure as _data/links.yml — see that file for notes on editing.
+
+- category: "Source document: Word"
+  items:
+    - title: Some title
+      url: https://example.com
+      description: Delete this placeholder once you have a real link to add.
+
+- category: "Source document: LaTeX"
+  items:
+    - title: Some other title
+      url: https://example.com
+      description: Delete this placeholder once you have a real link to add.

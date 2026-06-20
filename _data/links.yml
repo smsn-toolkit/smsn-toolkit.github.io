@@ -1,0 +1,21 @@
+# Each top-level item is a category shown as a heading on /links/.
+# Add a new link by copying an "items" block and filling in the three fields.
+# Add a new category by copying a whole "- category: ..." block.
+#
+# Indentation matters in YAML — copy-pasting an existing block and editing
+# the text is much safer than typing a new one from scratch.
+
+- category: Getting Started
+  items:
+    - title: Jekyll Documentation
+      url: https://jekyllrb.com/docs/
+      description: Official docs for the static site generator powering this site.
+    - title: Bulma Documentation
+      url: https://bulma.io/documentation/
+      description: Reference for every CSS class used in the design.
+
+- category: Inspiration
+  items:
+    - title: Replace this entry
+      url: https://example.com
+      description: Delete this placeholder once you have a real link to add.
