@@ -1,4 +1,11 @@
-# Same structure as _data/links.yml — see that file for notes on editing.
+# Same structure as _data/links.yml — same instructions for editing in that file too.
+
+# Each top-level item is a category shown as a heading on /links/.
+# Add a new link by copying an "items" block and filling in the three fields.
+# Add a new category by copying a whole "- category: ..." block.
+#
+# Indentation matters in YAML — copy-pasting an existing block and editing
+# the text is much safer than typing a new one from scratch.
 
 - category: "Source document: Word"
   items:
