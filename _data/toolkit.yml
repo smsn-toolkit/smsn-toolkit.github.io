@@ -19,7 +19,7 @@
       url: https://example.com
       description: Delete this placeholder once you have a real link to add.
 
-- category: "Source document: LaTeX"
+- category: "Quarto resources"
   items:
     - title: SMSN Quarto Workshop Templates and Materials
       url: https://tdhc153.github.io/smsn-quarto-workshop/
