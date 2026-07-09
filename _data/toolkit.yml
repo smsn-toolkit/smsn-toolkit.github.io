@@ -12,9 +12,6 @@
     - title: Some title
       url: https://example.com
       description: Delete this placeholder once you have a real link to add.
-    - title: Shazia is here
-      url: https://google.com
-      description: Blah blah
 
 - category: "Source document: LaTeX"
   items:
