@@ -20,6 +20,16 @@ Each entry is just:
 
 Copy an existing block and change the text. No HTML involved.
 
+**Add a self-contained resource** (standalone HTML slidedeck, complete website, or other pre-built material) — place it in the `materials/` folder:
+
+1. Create a subdirectory under `materials/` with a short, descriptive name (e.g., `quarto-workshop-jan-2026`).
+2. Place all files in that subdirectory. If the main file is named `index.html`, it will be automatically accessible when you link to just the folder (e.g., `/materials/resource-name/`). Otherwise, link directly to the specific file (e.g., `/materials/resource-name/slides.html`).
+3. Add an entry to `_data/toolkit.yml` or `_data/links.yml` to link to it from the appropriate page (as described).
+
+See `materials/README.md` for more details.
+
+## Less common edits
+
 **Edit page text** — open the relevant `.md` file in the root folder
 (`index.md`, `purpose.md`, `contact.md`, etc.) and edit the text below the
 `---` front matter block at the top. Leave the front matter itself alone.
@@ -55,4 +65,5 @@ purpose.md              Purpose
 toolkit-hub.md          Toolkit Hub — the main starting point for using the toolkit
 external-links.md       External Links
 contact.md              Contact
+materials/              self-contained resources (standalone HTML, slideshows, websites)
 ```
