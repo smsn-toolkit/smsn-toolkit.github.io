@@ -24,7 +24,7 @@ Copy an existing block and change the text. No HTML involved.
 
 1. Create a subdirectory under `materials/` with a short, descriptive name (e.g., `quarto-workshop-jan-2026`).
 2. Place all files in that subdirectory. If the main file is named `index.html`, it will be automatically accessible when you link to just the folder (e.g., `/materials/resource-name/`). Otherwise, link directly to the specific file (e.g., `/materials/resource-name/slides.html`).
-3. Add an entry to `_data/toolkit.yml` or `_data/links.yml` to link to it from the appropriate page.
+3. Add an entry to `_data/toolkit.yml` or `_data/links.yml` to link to it from the appropriate page (as described).
 
 See `materials/README.md` for more details.
 
