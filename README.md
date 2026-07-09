@@ -42,6 +42,14 @@ in the navigation bar.
 `assets/css/custom.css`. Bulma itself (loaded from a CDN in
 `_layouts/default.html`) never needs to be touched.
 
+**Add a self-contained resource** (standalone HTML slidedeck, complete website, or other pre-built material) — place it in the `materials/` folder:
+
+1. Create a subdirectory under `materials/` with a short, descriptive name (e.g., `quarto-workshop-jan-2026`).
+2. Place all files in that subdirectory. If the main file is named `index.html`, it will be automatically accessible when you link to just the folder (e.g., `/materials/resource-name/`). Otherwise, link directly to the specific file (e.g., `/materials/resource-name/slides.html`).
+3. Add an entry to `_data/toolkit.yml` or `_data/links.yml` to link to it from the appropriate page.
+
+See `materials/README.md` for more details.
+
 ## Structure
 
 ```
@@ -55,4 +63,5 @@ purpose.md              Purpose
 toolkit-hub.md          Toolkit Hub — the main starting point for using the toolkit
 external-links.md       External Links
 contact.md              Contact
+materials/              self-contained resources (standalone HTML, slideshows, websites)
 ```
