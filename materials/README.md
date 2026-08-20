@@ -12,7 +12,7 @@ This directory contains self-contained resources: standalone HTML slidedecks, co
 
 As long as the main file is called `index.html` it will be found automatically by pointing to just the folder below.
 
-3. **Link to it** in `_data/toolkit.yml` or `_data/links.yml`:
+3. **Link to it** in `_data/toolkit.yml` or `_data/links.yml` or `_data/core-objects.yml`:
 ```yaml
    - title: Resource Title
      url: /materials/resource-name/

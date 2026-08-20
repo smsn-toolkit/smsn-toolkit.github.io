@@ -11,10 +11,10 @@ under_construction: true
 nav_pages:
   - title: Home
     url: /
-  - title: Purpose
-    url: /purpose/
   - title: Toolkit Hub
     url: /toolkit-hub/
+  - title: Core Objects
+    url: /core-objects/
   - title: External Links
     url: /external-links/
   - title: Contact

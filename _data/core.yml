@@ -7,34 +7,26 @@
 # Indentation matters in YAML — copy-pasting an existing block and editing
 # the text is much safer than typing a new one from scratch.
 
-- category: "Source document: Word"
+- category: "Images"
   items:
     - title: Some title
       url: https://example.com
       description: Delete this placeholder once you have a real link to add.
 
-- category: "Source document: Powerpoint"
-  items:
-    - title: Some title
-      url: https://example.com
-      description: Delete this placeholder once you have a real link to add.
-
-
-- category: "Source document: LaTeX (including Beamer)"
+- category: "Figures and Diagrams"
   items:
     - title: Some other title
       url: https://example.com
       description: Delete this placeholder once you have a real link to add.
 
-- category: "Source document: Handwritten"
+- category: "Plots"
   items:
     - title: Some other title
       url: https://example.com
       description: Delete this placeholder once you have a real link to add.
 
-
-- category: "Templates: includng Quarto"
+- category: "Tables"
   items:
-    - title: SMSN Quarto Workshop Templates and Materials
-      url: https://tdhc153.github.io/smsn-quarto-workshop/
-      description: See Quarto templates for book and slides (Tom Coleman, University of St Andrews)
+    - title: Some other title
+      url: https://example.com
+      description: Delete this placeholder once you have a real link to add.
