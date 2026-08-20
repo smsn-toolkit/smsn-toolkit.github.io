@@ -4,7 +4,7 @@ title: Core Objects
 permalink: /core-objects/
 ---
 
-This page is dedicate to core objects like images, diagrams, plots, tables and other artifacts used across all your learning resources.
+This page is dedicate to core objects like images, diagrams, plots, tables and other artefacts used across all your learning resources.
 
 <!-- 
 To add, edit, or remove a link, you only need to 
