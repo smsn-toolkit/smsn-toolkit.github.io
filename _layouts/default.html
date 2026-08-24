@@ -39,6 +39,7 @@
           {% for item in site.nav_pages %}
             <a class="navbar-item {% if page.url == item.url %}is-active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
           {% endfor %}
+        <!-- Place -->
         </div>
       </div>
     </div>
