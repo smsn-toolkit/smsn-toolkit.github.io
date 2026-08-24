@@ -38,6 +38,8 @@
   max-width: min(80%, 1200px) !important;
 }
 
+/* Dark mode theme overrides (via data-theme attribute or prefers-color-scheme) */
+[data-theme="dark"],
 @media (prefers-color-scheme: dark) {
   :root {
     --accent: #3dd6a6;
@@ -131,6 +133,49 @@ h1, h2, h3, h4, h5, h6,
 .navbar .navbar-burger:focus-visible {
   outline: 2px solid var(--nav-text);
   outline-offset: -2px;
+}
+
+/* ================================
+   Dark/Light mode toggle button
+   ================================ */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.45rem;
+  background: transparent;
+  border: 1px solid var(--nav-text);
+  border-radius: 6px;
+  color: var(--nav-text);
+  cursor: pointer;
+  transition: color 200ms ease, border-color 200ms ease, background-color 200ms ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: var(--nav-hover-bg);
+  border-color: var(--nav-text);
+  color: var(--nav-text);
+  outline: 2px solid var(--nav-text);
+  outline-offset: -2px;
+}
+
+.theme-toggle svg {
+  display: block;
+}
+
+/* Icon visibility swap */
+.icon-moon {
+  display: none;
+}
+
+[data-theme="dark"] .icon-sun {
+  display: none;
+}
+
+[data-theme="dark"] .icon-moon {
+  display: block;
 }
 
 /* Link styling */
