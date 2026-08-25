@@ -22,9 +22,9 @@
 
 - category: "Source document: LaTeX (including Beamer)"
   items:
-    - title: Aberdeen thing
+    - title: Accessibility for LaTeX users
       url: https://abdn.site/accessible-material-written-in-latex
-      description: Delete this placeholder once you have a real link to add.
+    
 
 - category: "Source document: Handwritten"
   items:
