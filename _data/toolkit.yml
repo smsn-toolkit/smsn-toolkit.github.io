@@ -24,6 +24,8 @@
   items:
     - title: Accessibility for LaTeX users
       url: https://abdn.site/accessible-material-written-in-latex
+    - title: Guide to Using LaTeXML
+      url: /materials/latex/QU54_LaTeXML.pdf
     
 
 - category: "Source document: Handwritten"
