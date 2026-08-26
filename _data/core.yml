@@ -15,12 +15,8 @@
 
 - category: "Figures and Diagrams"
   items:
-    - title: Some other title
-      url: https://example.com
-      description: Delete this placeholder once you have a real link to add.
-    - title: Some other title
-      url: https://example.com
-      description: Delete this placeholder once you have a real link to add.
+    - title: Desmos Templates 
+      url: https://abdn.site/desmos-templates-repository
 
 
 - category: "Plots"
