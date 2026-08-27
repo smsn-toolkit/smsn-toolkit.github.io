@@ -9,9 +9,8 @@
 
 - category: "Source document: Word"
   items:
-    - title: Some title
-      url: https://example.com
-      description: Delete this placeholder once you have a real link to add.
+    - title: Short Guide to Writing Maths in Words
+      url: /materials/uoa_short_guides/MathsInWord.pptx
 
 - category: "Source document: Powerpoint"
   items:
@@ -22,15 +21,17 @@
 
 - category: "Source document: LaTeX (including Beamer)"
   items:
-    - title: Aberdeen thing
+    - title: Accessibility for LaTeX users
       url: https://abdn.site/accessible-material-written-in-latex
-      description: Delete this placeholder once you have a real link to add.
+    - title: Guide to Using LaTeXML
+      url: /materials/latex/QU54_LaTeXML.pdf
+    
 
 - category: "Source document: Handwritten"
   items:
-    - title: Some other title
-      url: https://example.com
-      description: Delete this placeholder once you have a real link to add.
+    - title: Short Guide to Handwritten Maths
+      url: /materials/uoa_short_guides/HandwrittenMaths.pptx
+     
 
 
 - category: "Templates: including Quarto"
