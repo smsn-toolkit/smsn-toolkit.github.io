@@ -38,3 +38,7 @@
     - title: SMSN Quarto Workshop Templates and Materials
       url: https://tdhc153.github.io/smsn-quarto-workshop/
       description: See Quarto templates for book and slides (Tom Coleman, University of St Andrews)
+    - title: University of Glasgow Quarto Templates
+      url: https://uofgstats.github.io/welcome/
+      description: Two Quarto templates developed by David Hodge at the University of Glasgow
+
