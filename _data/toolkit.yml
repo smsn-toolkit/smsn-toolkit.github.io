@@ -10,7 +10,7 @@
 - category: "Source document: Word"
   items:
     - title: Short Guide to Writing Maths in Words
-      url: materials/uoa_short_guides/MathsInWord.pptx
+      url: /materials/uoa_short_guides/MathsInWord.pptx
 
 - category: "Source document: Powerpoint"
   items:
@@ -30,7 +30,7 @@
 - category: "Source document: Handwritten"
   items:
     - title: Short Guide to Handwritten Maths
-      url: materials/uoa_short_guides/HandwrittenMaths.pptx
+      url: /materials/uoa_short_guides/HandwrittenMaths.pptx
      
 
 
