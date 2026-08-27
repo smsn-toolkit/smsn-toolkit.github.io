@@ -27,6 +27,6 @@
 
 - category: "Tables"
   items:
-    - title: Some other title
-      url: https://example.com
-      description: Delete this placeholder once you have a real link to add.
+    - title: Short Guide to Designing Tables
+      url: /materials/uoa_short_guides/InformationInTable.pptx
+      
