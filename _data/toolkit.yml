@@ -9,9 +9,8 @@
 
 - category: "Source document: Word"
   items:
-    - title: Some title
-      url: https://example.com
-      description: Delete this placeholder once you have a real link to add.
+    - title: Short Guide to Writing Maths in Words
+      url: materials/uoa_short_guides/MathsInWord.pptx
 
 - category: "Source document: Powerpoint"
   items:
@@ -30,9 +29,9 @@
 
 - category: "Source document: Handwritten"
   items:
-    - title: Some other title
-      url: https://example.com
-      description: Delete this placeholder once you have a real link to add.
+    - title: Short Guide to Handwritten Maths
+      url: materials/uoa_short_guides/HandwrittenMaths.pptx
+     
 
 
 - category: "Templates: including Quarto"
